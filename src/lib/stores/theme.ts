@@ -3,8 +3,8 @@ import { writable } from 'svelte/store';
 export type ThemePreference = 'light' | 'dark' | 'system';
 
 function getStoredTheme(): ThemePreference {
-  if (typeof window === 'undefined') return 'system';
-  return (localStorage.getItem('o3d_theme') as ThemePreference) || 'system';
+  if (typeof window === 'undefined') return 'light';
+  return (localStorage.getItem('o3d_theme') as ThemePreference) || 'light';
 }
 
 function resolveTheme(pref: ThemePreference): 'light' | 'dark' {

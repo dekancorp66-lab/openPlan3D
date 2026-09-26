@@ -399,7 +399,7 @@
   <div class="flex bg-white/15 rounded-full p-0.5 max-xl:hidden">
     <button
       onclick={() => panMode.set(false)}
-      class="px-2 py-1 text-xs font-semibold rounded-full transition-colors {!$panMode ? 'bg-white text-slate-800' : 'text-white/80 hover:text-white'}"
+      class="px-2 py-1 text-xs font-semibold rounded-full transition-colors {!$panMode ? 'bg-blue-600 text-white' : 'text-white/80 hover:text-white'}"
       title={$t('toolbarView.selectHint')}
       aria-label={$t('toolbarView.selectLabel')}
     >
@@ -407,7 +407,7 @@
     </button>
     <button
       onclick={() => panMode.set(true)}
-      class="px-2 py-1 text-xs font-semibold rounded-full transition-colors {$panMode ? 'bg-white text-slate-800' : 'text-white/80 hover:text-white'}"
+      class="px-2 py-1 text-xs font-semibold rounded-full transition-colors {$panMode ? 'bg-blue-600 text-white' : 'text-white/80 hover:text-white'}"
       title={$t('toolbarView.panHint')}
       aria-label={$t('toolbarView.panLabel')}
     >
@@ -436,7 +436,7 @@
     <div class="flex bg-white/15 rounded-full p-0.5 max-xl:hidden">
       <button
         onclick={exitElevation}
-        class="px-3 py-1 text-xs font-semibold rounded-full transition-colors flex items-center gap-1.5 {!$elevationWallId ? 'bg-white text-slate-800' : 'text-white/80 hover:text-white'}"
+        class="px-3 py-1 text-xs font-semibold rounded-full transition-colors flex items-center gap-1.5 {!$elevationWallId ? 'bg-blue-600 text-white' : 'text-white/80 hover:text-white'}"
         title={$t('toolbarView.planHint')}
         aria-pressed={!$elevationWallId}
       >
@@ -445,7 +445,7 @@
       </button>
       <button
         onclick={enterElevation}
-        class="px-3 py-1 text-xs font-semibold rounded-full transition-colors flex items-center gap-1.5 {$elevationWallId ? 'bg-white text-slate-800' : $elevationPickMode ? 'bg-blue-500 text-white' : 'text-white/80 hover:text-white'}"
+        class="px-3 py-1 text-xs font-semibold rounded-full transition-colors flex items-center gap-1.5 {$elevationWallId ? 'bg-blue-600 text-white' : $elevationPickMode ? 'bg-blue-500 text-white' : 'text-white/80 hover:text-white'}"
         title={$elevationPickMode ? $t('toolbarView.pickHint') : $t('toolbarView.elevationHint')}
         aria-pressed={!!$elevationWallId || $elevationPickMode}
       >
@@ -459,11 +459,11 @@
   <div class="flex bg-white/15 rounded-full p-0.5">
     <button
       onclick={() => setMode('2d')}
-      class="px-3 max-xl:px-2 py-1 text-xs font-semibold rounded-full transition-colors {mode === '2d' ? 'bg-white text-slate-800' : 'text-white/80 hover:text-white'}"
+      class="px-3 max-xl:px-2 py-1 text-xs font-semibold rounded-full transition-colors {mode === '2d' ? 'bg-blue-600 text-white' : 'text-white/80 hover:text-white'}"
     >2D</button>
     <button
       onclick={() => setMode('3d')}
-      class="px-3 max-xl:px-2 py-1 text-xs font-semibold rounded-full transition-colors {mode === '3d' ? 'bg-white text-slate-800' : 'text-white/80 hover:text-white'}"
+      class="px-3 max-xl:px-2 py-1 text-xs font-semibold rounded-full transition-colors {mode === '3d' ? 'bg-blue-600 text-white' : 'text-white/80 hover:text-white'}"
     >3D</button>
   </div>
 

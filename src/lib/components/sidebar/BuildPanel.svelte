@@ -352,17 +352,17 @@
 
 <div class="w-64 bg-white border-r border-gray-200 flex flex-col h-full overflow-hidden">
   <!-- Tabs -->
-  <div class="flex border-b border-gray-200">
+  <div class="flex gap-1 border-b border-gray-200 px-2 py-2">
     <button
-      class="flex-1 py-2.5 text-xs font-semibold uppercase tracking-wide {activeTab === 'draw' ? 'text-slate-800 border-b-2 border-blue-500 bg-blue-50' : 'text-gray-500 hover:text-gray-700'}"
+      class="flex-1 rounded-full py-2 text-xs font-semibold uppercase tracking-wide transition-colors {activeTab === 'draw' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'}"
       onclick={() => activeTab = 'draw'}
     >{$t('buildTools.build')}</button>
     <button
-      class="flex-1 py-2.5 text-xs font-semibold uppercase tracking-wide {activeTab === 'rooms' ? 'text-slate-800 border-b-2 border-blue-500 bg-blue-50' : 'text-gray-500 hover:text-gray-700'}"
+      class="flex-1 rounded-full py-2 text-xs font-semibold uppercase tracking-wide transition-colors {activeTab === 'rooms' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'}"
       onclick={() => activeTab = 'rooms'}
     >{$t('buildTools.rooms')}</button>
     <button
-      class="flex-1 py-2.5 text-xs font-semibold uppercase tracking-wide {activeTab === 'objects' ? 'text-slate-800 border-b-2 border-blue-500 bg-blue-50' : 'text-gray-500 hover:text-gray-700'}"
+      class="flex-1 rounded-full py-2 text-xs font-semibold uppercase tracking-wide transition-colors {activeTab === 'objects' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-700'}"
       onclick={() => activeTab = 'objects'}
     >{$t('buildTools.objects')}</button>
   </div>
